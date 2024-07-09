@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ccc;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header-left {
+    display: flex;
+    align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.menu-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #333;
+    margin-right: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 20px; /* Rounded border */
+    padding: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.search-input {
+    border: none;
+    outline: none;
+    padding: 5px;
+    margin-left: 5px;
+    width: 350px;
+    color: #d9cece;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search-icon {
+    font-size: 1rem;
+    color: #888;
+    margin-left: 5px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.notification-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #541d97;
+    margin-right: 20px;
+    position: relative;
+}
+
+.notification-button i {
+    font-size: 2rem;
+    margin-right: -55px;
+}
+
+.notification-badge {
+    position: absolute;
+    top: -5px;
+    right: -40px;
+    background-color: red;
+    color: white;
+    font-size: 0.8rem;
+    padding: 3px 6px;
+    border-radius: 50%;
+}
+
+.language-selector, .profile-info {
+    display: flex;
+    align-items: center;
+    margin-left: 35px;
+    position: relative;
+}
+
+.flag-icon {
+    width: 30px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.chevron-icon {
+    font-size: 0.8rem;
+    color: #888;
+    margin-left: 15px; 
+    margin-right: -55px; 
+    cursor: pointer;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.profile-details {
+    margin-right: 10px; /* Adjusted spacing */
 }
